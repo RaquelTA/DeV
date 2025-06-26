@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento D&V - Fotos dos Convidados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="monogram">D&V</div>
+            <h1>Daniela & Vinícius</h1>
+            <p class="wedding-date">15 • 12 • 2023</p>
+        </header>
+
+        <main>
+            <section class="photo-actions">
+                <p>Compartilhe seu momento conosco!</p>
+                <div class="buttons">
+                    <button id="openCamera" class="btn">📷 Tirar Foto</button>
+                    <button id="uploadPhoto" class="btn">🖼️ Enviar Foto</button>
+                </div>
+            </section>
+
+            <div id="cameraView" class="camera-view">
+                <video id="video" autoplay playsinline></video>
+                <button id="takePhoto" class="btn capture-btn">Capturar</button>
+            </div>
+
+            <input type="file" id="fileInput" accept="image/*" capture="environment" style="display:none">
+
+            <section class="gallery-section">
+                <h2>Galeria de Fotos</h2>
+                <div id="photoGallery" class="gallery"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Obrigado por fazer parte do nosso dia especial!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
